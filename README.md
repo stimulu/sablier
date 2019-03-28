@@ -1,2 +1,2 @@
-# sablier
-Design files for the Sablier
+# Sablier
+Design files for Sablier
