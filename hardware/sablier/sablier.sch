@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -17,21 +17,309 @@ $EndDescr
 $Comp
 L 0_stimulu-digikey-USB:CX70M-24P1 J1
 U 1 1 5CD1A6BE
-P 6300 3000
-F 0 "J1" H 6300 4035 50  0000 C CNN
-F 1 "CX70M-24P1" H 6300 3944 50  0000 C CNN
-F 2 "0_stimulu-common:USB-C_Female_CX70M-24P1" H 6500 3200 60  0001 L CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 6500 3300 60  0001 L CNN
-F 4 "H125292CT-ND" H 6500 3400 60  0001 L CNN "Digi-Key_PN"
-F 5 "CX70M-24P1" H 6500 3500 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 6500 3600 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 6500 3700 60  0001 L CNN "Family"
-F 8 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 6500 3800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/hirose-electric-co-ltd/CX70M-24P1/H125292CT-ND/6036267" H 6500 3900 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB3.0 TYPEC 24POS SMD" H 6500 4000 60  0001 L CNN "Description"
-F 11 "Hirose Electric Co Ltd" H 6500 4100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6500 4200 60  0001 L CNN "Status"
-	1    6300 3000
+P 1750 6500
+F 0 "J1" H 1750 7535 50  0000 C CNN
+F 1 "CX70M-24P1" H 1750 7444 50  0000 C CNN
+F 2 "0_stimulu-common:USB-C_Female_CX70M-24P1" H 1950 6700 60  0001 L CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 1950 6800 60  0001 L CNN
+F 4 "H125292CT-ND" H 1950 6900 60  0001 L CNN "Digi-Key_PN"
+F 5 "CX70M-24P1" H 1950 7000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1950 7100 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 1950 7200 60  0001 L CNN "Family"
+F 8 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 1950 7300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/hirose-electric-co-ltd/CX70M-24P1/H125292CT-ND/6036267" H 1950 7400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB3.0 TYPEC 24POS SMD" H 1950 7500 60  0001 L CNN "Description"
+F 11 "Hirose Electric Co Ltd" H 1950 7600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1950 7700 60  0001 L CNN "Status"
+	1    1750 6500
 	1    0    0    -1  
 $EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-MU U?
+U 1 1 5CDC532B
+P 5650 2900
+F 0 "U?" H 5650 1311 50  0000 C CNN
+F 1 "ATmega328PB-MU" H 5650 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 5650 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5CDC60C0
+P 5650 1200
+F 0 "#PWR?" H 5650 1050 50  0001 C CNN
+F 1 "VCC" H 5667 1373 50  0000 C CNN
+F 2 "" H 5650 1200 50  0001 C CNN
+F 3 "" H 5650 1200 50  0001 C CNN
+	1    5650 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1400 5650 1300
+Wire Wire Line
+	5750 1400 5750 1300
+Wire Wire Line
+	5750 1300 5650 1300
+Connection ~ 5650 1300
+Wire Wire Line
+	5650 1300 5650 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5CDC6745
+P 5650 4750
+F 0 "#PWR?" H 5650 4500 50  0001 C CNN
+F 1 "GND" H 5655 4577 50  0000 C CNN
+F 2 "" H 5650 4750 50  0001 C CNN
+F 3 "" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4400 5650 4750
+$Comp
+L Device:R R?
+U 1 1 5CDC6A3F
+P 5600 6750
+F 0 "R?" V 5393 6750 50  0000 C CNN
+F 1 "470" V 5484 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 6750 50  0001 C CNN
+F 3 "~" H 5600 6750 50  0001 C CNN
+	1    5600 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 5CDC6A43
+P 3250 6400
+F 0 "BT?" H 3358 6446 50  0000 L CNN
+F 1 "Battery LIR2450" H 3308 6255 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3008_1x2450" V 3250 6460 50  0001 C CNN
+F 3 "~" V 3250 6460 50  0001 C CNN
+	1    3250 6400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3950 5900 1300 500 
+U 5CDC6A45
+F0 "Power Management" 50
+F1 "power_management.sch" 50
+F2 "LIPO_IN" I L 3950 6100 50 
+F3 "VIN" I L 3950 6000 50 
+F4 "VOUT" O R 5250 6200 50 
+F5 "STAT" O R 5250 6300 50 
+$EndSheet
+Wire Wire Line
+	5250 6200 5850 6200
+Wire Wire Line
+	5250 6300 5350 6300
+Wire Wire Line
+	5350 6300 5350 6750
+Wire Wire Line
+	5350 6750 5450 6750
+Wire Wire Line
+	5750 6750 5850 6750
+Connection ~ 5850 6200
+Wire Wire Line
+	5850 6200 6600 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5CDC6A46
+P 5350 7500
+F 0 "#PWR?" H 5350 7250 50  0001 C CNN
+F 1 "GND" H 5355 7327 50  0000 C CNN
+F 2 "" H 5350 7500 50  0001 C CNN
+F 3 "" H 5350 7500 50  0001 C CNN
+	1    5350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5CDC6A4B
+P 2950 6150
+F 0 "D?" V 2996 6082 50  0000 R CNN
+F 1 "ON" V 2905 6082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 2950 6150 50  0001 C CNN
+F 3 "~" V 2950 6150 50  0001 C CNN
+	1    2950 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CDC6A4C
+P 2950 6450
+F 0 "R?" H 3009 6496 50  0000 L CNN
+F 1 "470" H 3000 6350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2950 6450 50  0001 C CNN
+F 3 "~" H 2950 6450 50  0001 C CNN
+F 4 "LED Current limiter" H 2950 6450 50  0001 C CNN "Function"
+	1    2950 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6350 2950 6250
+Wire Wire Line
+	2950 6050 2950 6000
+Text Label 3350 6000 0    50   ~ 0
+V_USB
+Text Label 3350 6100 0    50   ~ 0
+V_LIPO
+Text Label 5500 6200 0    50   ~ 0
+V_OUT
+Text Label 5350 6300 0    50   ~ 0
+STAT
+$Comp
+L power:GND #PWR?
+U 1 1 5CDDF33B
+P 2950 7500
+F 0 "#PWR?" H 2950 7250 50  0001 C CNN
+F 1 "GND" H 2955 7327 50  0000 C CNN
+F 2 "" H 2950 7500 50  0001 C CNN
+F 3 "" H 2950 7500 50  0001 C CNN
+	1    2950 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6200 3250 6100
+Wire Wire Line
+	3250 6100 3950 6100
+Wire Wire Line
+	2950 6550 2950 7050
+Wire Wire Line
+	3250 6600 3250 7050
+Wire Wire Line
+	1050 5950 1250 5950
+Wire Wire Line
+	2250 7050 2450 7050
+Wire Wire Line
+	2250 5950 2450 5950
+Wire Wire Line
+	2450 5950 2450 7050
+Connection ~ 2450 7050
+Wire Wire Line
+	2450 7050 2550 7050
+Wire Wire Line
+	2250 6350 2550 6350
+Wire Wire Line
+	2550 6350 2550 6550
+$Comp
+L Device:R_Small R?
+U 1 1 5CDF1F29
+P 2550 6650
+F 0 "R?" H 2759 6696 50  0000 L CNN
+F 1 "5K1 PULLDOWN" V 2659 6355 50  0000 L CNN
+F 2 "" H 2550 6650 50  0001 C CNN
+F 3 "~" H 2550 6650 50  0001 C CNN
+	1    2550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6750 2550 7050
+Connection ~ 2550 7050
+$Comp
+L Device:R_Small R?
+U 1 1 5CDF2328
+P 950 6850
+F 0 "R?" H 742 6846 50  0000 R CNN
+F 1 "5K1 PULLDOWN" V 842 7155 50  0000 R CNN
+F 2 "" H 950 6850 50  0001 C CNN
+F 3 "~" H 950 6850 50  0001 C CNN
+	1    950  6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 7050
+Wire Wire Line
+	2950 7050 3250 7050
+Wire Wire Line
+	2950 6000 3950 6000
+Wire Wire Line
+	2550 7050 2950 7050
+$Comp
+L power:GND #PWR?
+U 1 1 5CDF30BC
+P 950 7500
+F 0 "#PWR?" H 950 7250 50  0001 C CNN
+F 1 "GND" H 955 7327 50  0000 C CNN
+F 2 "" H 950 7500 50  0001 C CNN
+F 3 "" H 950 7500 50  0001 C CNN
+	1    950  7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7050 1050 7050
+Wire Wire Line
+	950  6650 950  6750
+Wire Wire Line
+	950  6950 950  7050
+Connection ~ 1050 7050
+Wire Wire Line
+	1050 7050 1250 7050
+Wire Wire Line
+	1050 5950 1050 7050
+Wire Wire Line
+	1250 6650 950  6650
+Wire Wire Line
+	2250 6250 2350 6250
+Wire Wire Line
+	2650 6250 2650 6000
+Wire Wire Line
+	2650 6000 2950 6000
+Connection ~ 2950 6000
+Wire Wire Line
+	2250 6750 2350 6750
+Wire Wire Line
+	2350 6750 2350 6250
+Connection ~ 2350 6250
+Wire Wire Line
+	2350 6250 2650 6250
+$Comp
+L power:VCC #PWR?
+U 1 1 5CDF7114
+P 6600 5950
+F 0 "#PWR?" H 6600 5800 50  0001 C CNN
+F 1 "VCC" H 6617 6123 50  0000 C CNN
+F 2 "" H 6600 5950 50  0001 C CNN
+F 3 "" H 6600 5950 50  0001 C CNN
+	1    6600 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5950 6600 6200
+Wire Wire Line
+	950  7050 950  7500
+Connection ~ 950  7050
+Wire Wire Line
+	1550 7450 1550 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5CDFBAA8
+P 1550 7500
+F 0 "#PWR?" H 1550 7250 50  0001 C CNN
+F 1 "GND" H 1555 7327 50  0000 C CNN
+F 2 "" H 1550 7500 50  0001 C CNN
+F 3 "" H 1550 7500 50  0001 C CNN
+	1    1550 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 7050 2950 7500
+Wire Wire Line
+	5350 6750 5350 7500
+Connection ~ 5350 6750
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5CDFD6BC
+P 5850 6400
+F 0 "D?" V 5896 6332 50  0000 R CNN
+F 1 "CHARGING" V 5805 6332 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 5850 6400 50  0001 C CNN
+F 3 "~" V 5850 6400 50  0001 C CNN
+	1    5850 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 6200 5850 6300
+Wire Wire Line
+	5850 6500 5850 6750
 $EndSCHEMATC
