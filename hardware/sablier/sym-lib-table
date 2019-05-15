@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name "0_stimulu-digikey-USB")(type "Legacy")(uri "${KIPRJMOD}/../libs/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib")(options "")(descr ""))
+  (lib (name "0_stimulu-digikey-RTC")(type "Legacy")(uri "${KIPRJMOD}/../libs/digikey-kicad-library/digikey-symbols/dk_Clock-Timing-Real-Time-Clocks.lib")(options "")(descr ""))
+  (lib (name "0_stimulu-common")(type "Legacy")(uri "${KIPRJMOD}/../libs/stimulu-common.lib")(options "")(descr ""))
 )
